@@ -1,0 +1,84 @@
+.topbar {
+  height: 64px;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar__nav {
+  display: flex;
+  gap: 8px;
+}
+
+.topbar__nav-btn {
+  width: 32px;
+  height: 32px;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.topbar__nav-btn:hover { background: rgba(255,255,255,0.1); }
+
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar__btn {
+  background: none;
+  border: 1px solid #727272;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.topbar__btn:hover { border-color: #fff; transform: scale(1.02); }
+
+.topbar__explore {
+  background: transparent;
+}
+
+.topbar__install {
+  background: #fff;
+  color: #000;
+  border-color: transparent;
+}
+
+.topbar__install:hover { background: #f0f0f0; border-color: transparent; }
+
+.topbar__avatar {
+  width: 32px;
+  height: 32px;
+  background: #535353;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.topbar__avatar:hover { background: #727272; }

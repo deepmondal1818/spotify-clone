@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #000;
+  font-family: 'Inter', 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #000;
+}
+
+.app__layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  gap: 8px;
+  padding: 8px 8px 0 8px;
+}
+
+.app__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+button { cursor: pointer; }
+button:focus-visible {
+  outline: 2px solid #1DB954;
+  outline-offset: 2px;
+}
