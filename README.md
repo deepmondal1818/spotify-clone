@@ -172,7 +172,7 @@ GET /users
 ### Deep Mondal
 
 - **GitHub:** https://github.com/deepmondal1818
-- **LinkedIn:** https://www.linkedin.com/in/deepmondal1818/
+- **LinkedIn:** www.linkedin.com/in/deep-mondal-82085b342
 
 ---
 
