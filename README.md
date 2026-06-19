@@ -1,86 +1,120 @@
 # 🎵 Spotify Clone
 
-A Spotify-inspired music streaming interface built with **React.js**, featuring a modern and responsive design along with custom audio playback controls.
+A full-stack Spotify-inspired music streaming application built with **React.js**, **Node.js**, and **Express.js**. The project features a responsive user interface, custom audio controls, and REST APIs for managing songs, playlists, and users.
 
-## ✨ Features
+---
 
-- 🎧 Custom music player controls
-- ⏯️ Play and pause functionality
-- ⏭️ Track navigation
-- 📱 Fully responsive design
-- 🧩 Reusable React components
-- ⚡ Custom hook for audio player state management
-- 🎨 Spotify-inspired user interface
+## 🚀 Features
+
+- 🎧 Music playback with custom controls
+- ⏯️ Play, Pause, Next, and Previous track functionality
+- 📱 Responsive and modern Spotify-inspired UI
+- 🎵 Audio streaming support
+- 📂 Song management APIs
+- 📑 Playlist management APIs
+- 👤 User management APIs
+- ⚡ Component-based React architecture
+- 🔄 Custom hooks for state management
 
 ---
 
 ## 🛠️ Tech Stack
 
+### Frontend
 - React.js
 - JavaScript
 - HTML5
 - CSS3
 
----
+### Backend
+- Node.js
+- Express.js
 
-## 📂 Project Structure
-
-```
-spotify-clone/
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── components/
-│   │   ├── Sidebar.jsx
-│   │   ├── TopBar.jsx
-│   │   ├── MainContent.jsx
-│   │   ├── Player.jsx
-│   │   └── *.css
-│   │
-│   ├── hooks/
-│   │   └── usePlayer.js
-│   │
-│   ├── data/
-│   │   └── songs.js
-│   │
-│   ├── App.jsx
-│   └── index.js
-│
-├── package.json
-└── README.md
-```
+### Tools
+- Git & GitHub
+- REST APIs
 
 ---
 
-## 🚀 Getting Started
+## 📁 Project Structure
 
-### Clone the repository
+```
+
+SPOTIFY-CLONE
+│
+├── backend/
+│ ├── routes/
+│ │ ├── songs.js
+│ │ ├── playlists.js
+│ │ └── users.js
+│ ├── data.js
+│ ├── server.js
+│ ├── .env
+│ ├── package.json
+│ └── README.md
+│
+├── spotify-clone/
+│ ├── public/
+│ │ ├── audio/
+│ │ └── index.html
+│ │
+│ ├── src/
+│ │ ├── components/
+│ │ ├── hooks/
+│ │ ├── data/
+│ │ │ └── songs.js
+│ │ ├── assets/
+│ │ ├── App.jsx
+│ │ ├── App.css
+│ │ └── index.js
+│ │
+│ ├── download-music.js
+│ ├── package.json
+│ └── README.md
+│
+└── package-lock.json
+
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/deepmondal1818/spotify-clone.git
 ```
 
-### Navigate to the project
+---
+
+### 2. Start Backend Server
 
 ```bash
-cd spotify-clone
-```
-
-### Install dependencies
-
-```bash
+cd backend
 npm install
-```
-
-### Run the application
-
-```bash
 npm start
 ```
 
-Open your browser and visit:
+Server runs on:
+
+```
+http://localhost:5000
+```
+
+---
+
+### 3. Start Frontend
+
+Open another terminal:
+
+```bash
+cd spotify-clone
+npm install
+npm start
+```
+
+Frontend runs on:
 
 ```
 http://localhost:3000
@@ -88,25 +122,48 @@ http://localhost:3000
 
 ---
 
+## 📡 API Endpoints
+
+### Songs
+
+```http
+GET /songs
+```
+
+### Playlists
+
+```http
+GET /playlists
+```
+
+### Users
+
+```http
+GET /users
+```
+
+---
+
 ## 🎯 Learning Outcomes
 
-- Built a component-based architecture using React.
-- Implemented custom hooks for player functionality.
-- Developed a responsive and interactive UI.
-- Improved understanding of state management and reusable components.
-- Practiced modern frontend development principles.
+- Built a full-stack music streaming application.
+- Developed reusable React components.
+- Created REST APIs using Express.js.
+- Implemented responsive UI and custom audio controls.
+- Practiced component-based architecture and state management.
+- Improved understanding of frontend-backend integration.
 
 ---
 
 ## 🔮 Future Enhancements
 
-- Backend integration with Node.js and Express.js
-- User authentication
-- Playlist creation
-- Search functionality
-- Dark/Light mode
-- Database support with MongoDB
-- Favorites and recently played tracks
+- User Authentication (JWT)
+- MongoDB Database Integration
+- Search Functionality
+- Favorites and Recently Played Songs
+- Playlist Creation and Editing
+- Dark/Light Theme Support
+- Real-Time Streaming Features
 
 ---
 
@@ -114,130 +171,10 @@ http://localhost:3000
 
 ### Deep Mondal
 
-- GitHub: **https://github.com/deepmondal1818**
-- LinkedIn: **# 🎵 Spotify Clone
-
-A Spotify-inspired music streaming interface built with **React.js**, featuring a modern and responsive design along with custom audio playback controls.
-
-## ✨ Features
-
-- 🎧 Custom music player controls
-- ⏯️ Play and pause functionality
-- ⏭️ Track navigation
-- 📱 Fully responsive design
-- 🧩 Reusable React components
-- ⚡ Custom hook for audio player state management
-- 🎨 Spotify-inspired user interface
+- **GitHub:** https://github.com/deepmondal1818
+- **LinkedIn:** https://www.linkedin.com/in/deepmondal1818/
 
 ---
 
-## 🛠️ Tech Stack
+⭐ If you found this project useful, please consider giving it a star!
 
-- React.js
-- JavaScript
-- HTML5
-- CSS3
-
----
-
-## 📂 Project Structure
-
-```
-spotify-clone/
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── components/
-│   │   ├── Sidebar.jsx
-│   │   ├── TopBar.jsx
-│   │   ├── MainContent.jsx
-│   │   ├── Player.jsx
-│   │   └── *.css
-│   │
-│   ├── hooks/
-│   │   └── usePlayer.js
-│   │
-│   ├── data/
-│   │   └── songs.js
-│   │
-│   ├── App.jsx
-│   └── index.js
-│
-├── package.json
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-### Clone the repository
-
-```bash
-git clone https://github.com/deepmondal1818/spotify-clone.git
-```
-
-### Navigate to the project
-
-```bash
-cd spotify-clone
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Run the application
-
-```bash
-npm start
-```
-
-Open your browser and visit:
-
-```
-http://localhost:3000
-```
-
----
-
-## 🎯 Learning Outcomes
-
-- Built a component-based architecture using React.
-- Implemented custom hooks for player functionality.
-- Developed a responsive and interactive UI.
-- Improved understanding of state management and reusable components.
-- Practiced modern frontend development principles.
-
----
-
-## 🔮 Future Enhancements
-
-- Backend integration with Node.js and Express.js
-- User authentication
-- Playlist creation
-- Search functionality
-- Dark/Light mode
-- Database support with MongoDB
-- Favorites and recently played tracks
-
----
-
-## 👨‍💻 Author
-
-### Deep Mondal
-
-- GitHub: **https://github.com/deepmondal1818**
-- LinkedIn: **www.linkedin.com/in/deep-mondal-82085b342**
-
----
-
-⭐ Feel free to fork this repository and give it a star if you like the project!**
-
----
-
-⭐ Feel free to fork this repository and give it a star if you like the project!
