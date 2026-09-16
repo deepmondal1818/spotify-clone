@@ -1,5 +1,5 @@
 import React from "react";
-import { songs, featuredPlaylists } from "../data/songs";
+import { featuredPlaylists } from "../data/songs";
 import "./MainContent.css";
 
 const PlayIcon = () => (
@@ -50,6 +50,7 @@ export default function MainContent({
   isPlaying,
   likedSongs,
   onToggleLike,
+  songs,
 }) {
   return (
     <main className="main-content">

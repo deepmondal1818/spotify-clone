@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { playlists } from "../data/songs";
 import "./Sidebar.css";
 
 const HomeIcon = () => (
@@ -28,7 +27,7 @@ const HeartIcon = ({ filled }) => (
   </svg>
 );
 
-export default function Sidebar({ currentSong, onPlaylistSelect, activeView, onViewChange }) {
+export default function Sidebar({ currentSong, playlists = [], onPlaylistSelect, activeView, onViewChange }) {
   const [activePlaylist, setActivePlaylist] = useState(null);
 
   const handlePlaylistClick = (pl) => {

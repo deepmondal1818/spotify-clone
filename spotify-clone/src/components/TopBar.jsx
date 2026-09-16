@@ -13,7 +13,8 @@ const ForwardIcon = () => (
   </svg>
 );
 
-export default function TopBar() {
+export default function TopBar({ user, onSearch }) {
+  const handleSearch = (event) => onSearch?.(event.target.value);
   return (
     <header className="topbar">
       <div className="topbar__nav">
@@ -25,11 +26,13 @@ export default function TopBar() {
         </button>
       </div>
 
+      <input className="topbar__search" placeholder="Search songs, artists, albums" onChange={handleSearch} />
+
       <div className="topbar__right">
         <button className="topbar__btn topbar__explore">Explore Premium</button>
         <button className="topbar__btn topbar__install">Install App</button>
         <div className="topbar__avatar">
-          <span>U</span>
+          <span>{user?.avatar || user?.name?.charAt(0) || "U"}</span>
         </div>
       </div>
     </header>

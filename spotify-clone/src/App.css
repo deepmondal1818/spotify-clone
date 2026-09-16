@@ -47,3 +47,6 @@ button:focus-visible {
   outline: 2px solid #1DB954;
   outline-offset: 2px;
 }
+
+.auth-loading { min-height: 100vh; display: grid; place-items: center; background: #0b0d13; color: #b7f36b; }
+.app__logout { position: fixed; top: 12px; right: 16px; z-index: 5; border: 1px solid #ffffff33; border-radius: 999px; padding: 8px 14px; background: #ffffff12; color: #fff; }

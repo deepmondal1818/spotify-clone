@@ -32,6 +32,20 @@
 
 .topbar__nav-btn:hover { background: rgba(255,255,255,0.1); }
 
+.topbar__search {
+  width: min(360px, 38vw);
+  margin-left: 20px;
+  margin-right: auto;
+  padding: 10px 16px;
+  border: 1px solid #ffffff1f;
+  border-radius: 999px;
+  background: #ffffff0d;
+  color: #fff;
+  font: inherit;
+}
+
+.topbar__search::placeholder { color: #9ca3af; }
+
 .topbar__right {
   display: flex;
   align-items: center;

@@ -88,7 +88,9 @@ git clone https://github.com/deepmondal1818/spotify-clone.git
 
 ---
 
-### 2. Start Backend Server
+### 2. Configure the local backend and start it
+
+Copy `backend/.env.example` to `backend/.env` and set a long JWT secret. User accounts, likes, playlists, and recent plays are stored in `backend/data/store.json` for this local demo. No MongoDB or external database is required.
 
 ```bash
 cd backend
@@ -118,6 +120,17 @@ Frontend runs on:
 
 ```
 http://localhost:3000
+
+Copy `spotify-clone/.env.example` to `spotify-clone/.env` if the API is not running at the default URL. On first startup, the backend creates the local JSON store from the existing song catalog. Register an account in the app; playlists, likes, recent plays, and profile data are then stored per user.
+
+### Authenticated API
+
+- `POST /api/auth/register`, `POST /api/auth/login`, `POST /api/auth/logout`
+- `GET /api/auth/me`
+- `GET /api/songs`, `GET /api/songs/search/:query`, `POST /api/songs/:id/play`
+- `GET/POST /api/playlists`, `PUT/DELETE /api/playlists/:id`
+- `POST/DELETE /api/playlists/:id/songs/:songId`
+- `GET/PUT /api/users/me`, `GET /api/users/me/likes`, `POST /api/users/me/likes/:songId`
 ```
 
 ---
@@ -158,7 +171,7 @@ GET /users
 ## 🔮 Future Enhancements
 
 - User Authentication (JWT)
-- MongoDB Database Integration
+- Local JSON data store for the demo
 - Search Functionality
 - Favorites and Recently Played Songs
 - Playlist Creation and Editing
